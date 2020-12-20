@@ -5,7 +5,7 @@
 	function get_content() {
 
 ?>
-	<div class="container mt-5 mb-5">
+	<div class="container1 mt-5 mb-5">
 		<div class="row">
 			<div class="col-md-6">
 				<h3>Upload Product</h3>

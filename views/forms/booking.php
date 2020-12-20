@@ -1,12 +1,17 @@
 <?php
 	session_start();
 	$title = "Home";
-	$place = "Home Page";
+	
 	function get_content() {
+		$place = "Home Page";
 		$placeses = array("meetingRoom", "carpark", "library", "gymRoom");
-		$url = "data/items/";
+		$url = "../../data/items/";
 			
 ?>
+
+<?php require_once '../partials/nav.php'; ?>
+
+<?php require_once '../partials/header.php'; ?>
 
 		<section class="container1">
 			<table class="table table-striped">
@@ -80,5 +85,5 @@
 
 <?php
 	}
-	require_once 'views/partials/layout.php';
+	require_once '../partials/layout.php';
 ?>

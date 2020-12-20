@@ -161,6 +161,15 @@ form {
 	width:100%;
 }
 
+form3 {
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	height: 100%;
+	text-align: center;
+	width:100%;
+}
+
 input {
 	background-color: #eee;
 	border: none;
@@ -168,6 +177,8 @@ input {
 	margin: 8px 0;
 	width: 100%;
 }
+
+
 
 .container {
 	background-color: rgb(255, 255, 255);
@@ -189,6 +200,7 @@ input {
 .form1 {
 	background: linear-gradient(#55e9c4, #9198e5);
 }
+
 
 
 #button {
@@ -340,6 +352,10 @@ input {
 	overflow-x: hidden;
   }
   
+  .navbar a {
+	  font-weight: 500;
+  }
+
   .navbar-toggler {
 	outline: none !important;
 	border: none;
@@ -414,10 +430,11 @@ input {
   }
   
 	.navbar .nav-link {
-	  color:#343a40 !important;
+	  color:#ffffff !important;
+	  
 	}
 	.navbar .nav-link:hover, .navbar .nav-link:focus, .navbar .nav-link.active {
-	  color: #ac887e !important;
+	  color:rgba(255, 255, 255, 0.705) !important;
 	}
   
 
@@ -482,4 +499,10 @@ input {
 	  100% {
 	  transform: scale(1);
 	}
+  }
+
+
+  .editprofileform{
+	  width:100%;
+	  height:auto;
   }

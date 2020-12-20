@@ -18,4 +18,7 @@ function get_payments() {
 	return $payments;
 }
 
- ?>
+function get_data($url){
+	$datas = json_decode(file_get_contents($url));
+	return $datas;
+}

@@ -15,7 +15,7 @@ if(strlen($fullname) <2){
    echo "Username is not available";
 }
 
-if(strlen($username) <8){
+if(strlen($username) <4){
     $errors++;
     echo "Username should be atleast 8 characters";
 }
@@ -25,7 +25,7 @@ if($password != $password2){
     echo"password not match";
 }
 
-if(strlen($password)<8|| strlen($password2)<8){
+if(strlen($password)<4|| strlen($password2)<4){
     $errors++;
     echo "Password should be at least 8 characters";
 }
@@ -40,7 +40,7 @@ if($existing){
     echo "Username already exists";
 }
 
-if($errors ==0 ){
+if($errors == 0 ){
     $user = new stdClass();
     $user->fullname = $fullname;
     $user->username = $username;
@@ -51,7 +51,7 @@ if($errors ==0 ){
 
     file_put_contents('../data/users.json',json_encode($users,JSON_PRETTY_PRINT));
 
-    header("Location: /index.php");
+    header("Location: /");
 }
 
 

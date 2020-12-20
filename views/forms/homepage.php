@@ -12,8 +12,8 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
               <li class="nav-item"><a class="nav-link" href="/views/forms/homepage.php">Home</a></li>
-              <li class="nav-item"><a class="nav-link" href="">Profile</a></li>
-              <li class="nav-item"><a class="nav-link" href="">Register</a></li>
+              <li class="nav-item"><a class="nav-link" href="../partials/user_edit.php">Profile</a></li>
+              <li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>
             </ul>
             <ul class="navbar-nav d-none d-lg-block px-4">
               <li class="nav-item m-0">
@@ -21,9 +21,9 @@
               </li>
             </ul>
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item"><a class="nav-link" href="">Booking </a></li>
-              <li class="nav-item"><a class="nav-link" href="">View User</a></li>
-              <li class="nav-item"><a class="nav-link" href="">Log Out</a></li>
+              <li class="nav-item"><a class="nav-link" href="booking.php">Booking </a></li>
+              <li class="nav-item"><a class="nav-link" href="adminuser.php">View User</a></li>
+              <li class="nav-item"><a class="nav-link" href="../../controllers/process/process_logout.php">Log Out</a></li>
             </ul>
           </div>
         </div>

@@ -19,7 +19,7 @@
 
 
     <main>
-    <?php get_content(); ?>
+      <?php get_content(); ?>
     </main>
     
 

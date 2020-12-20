@@ -4,5 +4,11 @@
         "quantity": "1",
         "image": "\/assets\/img\/carbon (25).png",
         "isActive": true
+    },
+    {
+        "modal": "carpark 2",
+        "quantity": "5",
+        "image": "\/assets\/img\/braden-jarvis-prSogOoFmkw-unsplash.jpg",
+        "isActive": true
     }
 ]

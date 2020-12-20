@@ -1,9 +1,9 @@
 [
     {
-        "modal": "carpark 1",
-        "quantity": "1",
-        "image": "\/assets\/img\/carbon (24).png",
-        "isActive": false
+        "modal": "carpark 2",
+        "quantity": "5",
+        "image": "\/assets\/img\/jade-stephens-T-FSAK4Bv9c-unsplash.jpg",
+        "isActive": true
     },
     {
         "modal": "carpark 1",

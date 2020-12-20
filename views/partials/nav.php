@@ -9,16 +9,17 @@
 	<div class="navbar-collapse	apse navbar-collapse text-center" id="navbarMenu">
 		<div class="navbar-nav ml-auto">
 
-			<a href="/" class="nav-link text-white">Home</a>
-
-			<a href="/views/forms/login.php" class="nav-link text-white">Login</a>
+			<a href="../forms/homepage.php" class="nav-link text-white">Home</a>
+			<?php if(isset($_SESSION['user_details']) && !$_SESSION['user_details']->isAdmin) :?>
 			<a href="/views/forms/register.php" class="nav-link text-white">Register</a>
-
-			<a href="/views/cart.php" class="nav-link text-white">Booking</a>
-
+			<?php endif; ?>
+			<?php if(isset($_SESSION['user_details']) && !$_SESSION['user_details']->isAdmin) :?>
+			<a href="/views/forms/booking.php" class="nav-link text-white">Booking</a>
+			<?php endif; ?>
+			<?php if(isset($_SESSION['user_details']) && !$_SESSION['user_details']->isAdmin) :?>
 			<a href="/views/partials/products.php" class="nav-link text-white">Management</a>
-
-			<a href="/controllers/process_logout.php" class="nav-link text-white">Logout</a>
+			<?php endif; ?>
+			<a href="../../controllers/process/process_logout.php" class="nav-link text-white">Logout</a>
 
 		</div>
 	</div>

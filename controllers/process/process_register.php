@@ -17,7 +17,7 @@ if(strlen($fullname) <2){
    echo "Username is not available";
 }
 
-if(strlen($username) <8){
+if(strlen($username) <=3){
     $errors++;
     echo "Username should be atleast 8 characters";
 }
@@ -27,7 +27,7 @@ if($password != $password2){
     echo"password not match";
 }
 
-if(strlen($password)<8|| strlen($password2)<8){
+if(strlen($password)<=3|| strlen($password2)<=3){
     $errors++;
     echo "Password should be at least 8 characters";
 }
