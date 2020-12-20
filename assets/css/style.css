@@ -72,3 +72,10 @@ th img {
 	max-height: 100px;
 }
 
+p {
+	border-bottom: 1px solid white;
+}
+
+.image1 {
+	border-radius: 15px;
+}

@@ -1,7 +1,7 @@
 <?php
 	session_start();
-	$title = "Home";
-	$place = "Home Page";
+	$title = "Booking";
+	$place = "Booking Page";
 	function get_content() {
 		$placeses = array("meetingRoom", "carpark", "library", "gymRoom");
 		$url = "data/items/";
@@ -36,11 +36,11 @@
 						<td><?php echo $value->quantity; ?></td>
 						<td></td>
 						<td>
-							<!-- <a 
+							<a 
 								href="/controllers/activate_deactivate.php?id=<?php echo $i ?>" 
 								class="btn btn-<?php $product->isActive ? print("secondary") : print('success')?>">
 								<?php $product->isActive ? print('Deactivate') : print('Activate')?>
-							</a> -->
+							</a>
 						</td>
 						<td>
 							<div>

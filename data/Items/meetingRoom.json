@@ -1,1 +1,8 @@
-[]
+[
+    {
+        "modal": "Meeting room 1",
+        "quantity": "10",
+        "image": "\/assets\/img\/carbon (25).png",
+        "isActive": false
+    }
+]
