@@ -9,17 +9,6 @@ html, body{
 		font-family: 'ZCOOL XiaoWei', serif;
 }
 
-/*html, body {
-	height: 100%;
-}
-
-main {
-	min-height: 100%;
-}
-*/
-
-
-/* NAV TOP*/
 .position-r {
 	position: relative;
 	background: rgba(0, 0, 0, 0.5);
@@ -72,15 +61,6 @@ th img {
 	max-height: 100px;
 }
 
-<<<<<<< HEAD
-p {
-	border-bottom: 1px solid white;
-}
-
-.image1 {
-	border-radius: 15px;
-}
-=======
 
 
 
@@ -481,4 +461,25 @@ input {
   .logo1{
 	top: -100%;
   }
->>>>>>> 6094c611ab77b40338015758790319d5dee1eaad
+
+  .box1 {
+	background-color: transparent;
+	border: 3px solid #4f70dd;
+	color: #4f8aac00;
+	transition: .3s;
+  }
+  .box1:hover {
+	animation: pulse 1s infinite;
+	transition: .3s;
+  }
+  @keyframes pulse {
+	0% {
+	  transform: scale(1);
+	}
+	70% {
+	  transform: scale(.9);
+	}
+	  100% {
+	  transform: scale(1);
+	}
+  }

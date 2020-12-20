@@ -48,49 +48,48 @@
 
     <div class="container-fluid px-5 box">
       <div class="row ">
-          <div class="box1 col-lg-4 col-md-6 col-12 text-center">
-            <div class="">
-            <a class="nav-link" href="/views/forms/homepage.php">
+          <div class="table col-lg-4 col-md-6 col-12 text-center">
+            <div class="box1">
+            <a class="nav-link" href="/views/forms/carpark.php">
             <i class="fa fa-car fa-3x" aria-hidden="true"></i>
             <h1>Carpark</h1>
-            <p>Where You will never need to search for parking anymore</p>
+            <p>Never need to search for parking anymore</p>
             </a>
             </div>
           </div>
-          <div class="box1 col-lg-4 col-md-6 col-12 text-center">
-          <div class="">
-            <a class="nav-link" href="/views/forms/homepage.php">
+          <div class="table col-lg-4 col-md-6 col-12 text-center">
+          <div class="box1">
+            <a class="nav-link" href="/views/forms/library.php">
           <i class="fa fa-book fa-3x " aria-hidden="true"></i>
           <h1>Library</h1>
           <p>Where you can acknowledge your skills here </p>
           </a>
           </div>
           </div>
-          <div class="box1 col-lg-4 col-md-6 col-12 text-center">
-          <div class="">
-            <a class="nav-link" href="/views/forms/homepage.php">
+          <div class="table col-lg-4 col-md-6 col-12 text-center">
+          <div class="box1">
+            <a class="nav-link" href="/views/forms/officeAssets.php">
+          <i class="fa fa-university fa-3x" aria-hidden="true"></i>
+          <h1>Assets</h1>
+          <p> Where you can borrow assets easily from the company </p>
+          </a>
+          </div>
+          </div>
+          <div class="table col-lg-6 col-md-6 col-12 text-center">
+          <div class="box1">
+            <a class="nav-link" href="/views/forms/meetingroom.php">
           <i class="fa fa-id-badge fa-3x" aria-hidden="true"></i>
           <h1>Meeting Room</h1>
           <p> Where you book for a Meeting Room easily  </p>
           </a>
           </div>
           </div>
-          <div class="box1 col-lg-6 col-md-6 col-12 text-center">
-          <div class="">
-            <a class="nav-link" href="/views/forms/homepage.php">
-          <i class="fa fa-university fa-3x" aria-hidden="true"></i>
-          <h1>Assets</h1>
-          <p> Where you can borrow assets easily from the company </p>
-          </a>
-          </div>
-          </div>
-
-          <div class="box1 col-lg-6 col-md-6 col-12 text-center">
-          <div class="">
-            <a class="nav-link" href="/views/forms/homepage.php">
-          <i class="fa fa-university fa-3x" aria-hidden="true"></i>
-          <h1>Assets</h1>
-          <p> Where you can borrow assets easily from the company </p>
+          <div class="table col-lg-6 col-md-6 col-12 text-center">
+          <div class="box1">
+            <a class="nav-link" href="/views/forms/gymroom.php">
+            <i class="fa fa-child fa-3x" aria-hidden="true"></i>
+          <h1>Gym Room</h1>
+          <p> Where you get fit and a healthy lifestyle </p>
           </a>
           </div>
           </div>

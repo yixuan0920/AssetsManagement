@@ -3,12 +3,12 @@
         "modal": "carpark 1",
         "quantity": "1",
         "image": "\/assets\/img\/carbon (24).png",
-        "isActive": true
+        "isActive": false
     },
     {
         "modal": "carpark 1",
         "quantity": "1",
         "image": "\/assets\/img\/carbon (24).png",
-        "isActive": true
+        "isActive": false
     }
 ]

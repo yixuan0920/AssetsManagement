@@ -1,15 +1,21 @@
 <?php
 	session_start();
 	$title = "Library";
-	$place = "Library Page";
 
 	function get_content() {
+		$place = "Library Page";
 		$placeses = array("library");
 		$url = "../../data/items/";
 			
 ?>
 
-		<section class="container">
+<?php require_once '../partials/nav.php'; ?>
+
+<?php require_once '../partials/header.php'; ?>
+
+<?php require_once '../partials/nav2.php'; ?>
+
+		<section class="container1">
 			<table class="table table-striped">
 				<thead>
 					<tr>
@@ -17,12 +23,9 @@
 						<th scope="col">Asset Tag</th>
 						<th scope="col">Model</th>
 						<th scope="col">Status</th>
-						<th></th>
-						<?php if(isset($_SESSION['user_details']) && $_SESSION['user_details']->isAdmin) :?>
 						<th scope="col">Borrowed To</th>
-					<?php endif;?>
-
-
+						<th scope="col"></th>
+						<th scope="col"></th>
 					</tr>
 				</thead>
 
@@ -40,13 +43,7 @@
 						<td>
 							<span><?php echo $value->quantity; ?></span>
 						</td>
-
-								<?php if(isset($_SESSION['user_details']) && $_SESSION['user_details']->isAdmin) :?>
-						<td><?php echo $_SESSION['user_details']->fullname; ?></td>
-								<?php endif; ?>
-
-
-							<?php if(isset($_SESSION['user_details']) && $_SESSION['user_details']->isAdmin) :?>
+						<td><?php echo '$username_admin_see'?></td>
 						<td>
 							<a 
 								href="../../controllers/admin/activate_deactivate.php?id=<?php echo $id ?>&places=<?php echo $places?>" 
@@ -54,10 +51,7 @@
 								<?php $value->isActive ? print('Deactivate') : print('Activate')?>
 							</a>
 						</td>
-							<?php endif; ?>
-
 						<td>
-							<?php if(isset($_SESSION['user_details']) && $_SESSION['user_details']->isAdmin): ?>
 							<div>
 								<span><a href="../../controllers/admin/process_delete.php?id=<?php echo $id?>&places=<?php echo $places?>" class="btn btn-danger" >Delete</a></span>
 								<span><button class="btn btn-success ml-2" data-toggle="modal" data-target="#editModal">Edit</button>
@@ -77,8 +71,8 @@
 
 													<div class="form-group">
 														<label>Image</label>
-														<img src="<?php echo $value->image ?>" class="d-block img-fluid image1">
-														<input type="file" name="image" value="<?php echo $value->image ?>">
+														<img src="<?php echo $value->image ?>" class="d-block img-fluid">
+														<input type="file" name="image" class="form-control" value="<?php echo $value->image ?>">
 														<input type="hidden" name="current_image" class="form-control" value="<?php echo $value->image ?>">
 													</div>
 
@@ -106,27 +100,33 @@
 									</div>
 								</div>
 							</div>
-						<?php endif; ?>
-
 								</span>
 							</div>
 
+
 							<div>
-								<?php if(isset($_SESSION['user_details']) && !$_SESSION['user_details']->isAdmin) :?>
 								<?php if($value->isActive) :?>
 								<a 
 								href="../../controllers/admin/process_borrow.php?id=<?php echo $id ?>&places=<?php echo $places?>" 
 								class="btn btn-warning">Borrow</a>
-							<?php endif;endif;
-							 ?>
+							<?php endif; ?>
 
-								<?php if(isset($_SESSION['user_details']) && !$_SESSION['user_details']->isAdmin) :?>
 								<?php if(!$value->isActive) :?>
 								<span class="btn disabled">Borrow</span>
-							<?php endif;endif; ?>
-
+							<?php endif; ?>
 							</div>
 						</td>
+					</tr>
+
+					<tr>
+						<th scope="row"></th>
+						<div class="d-flex">
+							<td></td>
+							<td></td>
+							<td></td>
+						</div>
+					</tr>
+					<tr>
 					</tr>
 					
 				</tbody>

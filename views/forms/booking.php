@@ -8,7 +8,7 @@
 			
 ?>
 
-		<section class="container">
+		<section class="container1">
 			<table class="table table-striped">
 				<thead>
 					<tr>
@@ -72,6 +72,10 @@
 			</table>
 		</section>
 
+
+		<footer class="bg-dark text-white py-4 text-center">
+	<small>Asset Management System</small>
+</footer>
 
 
 <?php
